@@ -9,6 +9,7 @@ import Leadership from '@/components/Leadership';
 import Contact from '@/components/Contact';
 import ProjectCard from '@/components/ProjectCard';
 import Footer from '@/components/Footer';
+import { ArrowUpRight } from 'lucide-react';
 
 const projects = [
   {
@@ -82,8 +83,8 @@ const Index = () => {
       <div ref={contentRef} className="relative z-10 max-w-6xl mx-auto px-4 py-8 sm:py-12 space-y-8">
         {/* Main Layout Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Left Column */}
-          <div className="md:col-span-4 space-y-6">
+          {/* Left Column - Full height column for Hero, Socials, About */}
+          <div className="md:col-span-2 space-y-6">
             {/* Hero */}
             <Hero name="Indraneel" title="Software Engineer & Design Enthusiast" />
             
@@ -95,7 +96,7 @@ const Index = () => {
           </div>
           
           {/* Right Column - Skills (taller) */}
-          <div className="md:row-span-1">
+          <div className="md:col-span-1">
             <Skills />
           </div>
         </div>
@@ -139,7 +140,5 @@ const Index = () => {
     </>
   );
 };
-
-import { ArrowUpRight } from 'lucide-react';
 
 export default Index;

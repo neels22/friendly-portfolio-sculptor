@@ -8,7 +8,7 @@ interface HeroProps {
 
 const Hero = ({ name, title }: HeroProps) => {
   return (
-    <div className="group w-full md:w-1/2 p-6 bg-white/70 backdrop-blur-md border border-neutral-200 rounded-lg shadow-sm transition-all duration-300 hover:shadow-md animate-fade-in">
+    <div className="group w-full p-6 bg-white/70 backdrop-blur-md border border-neutral-200 rounded-lg shadow-sm transition-all duration-300 hover:shadow-md animate-fade-in">
       <div className="flex flex-col space-y-2">
         <div className="inline-flex items-center mb-1">
           <span className="text-xs font-medium px-2 py-0.5 bg-neutral-100 text-neutral-700 rounded-full">
