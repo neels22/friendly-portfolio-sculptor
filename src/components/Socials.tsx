@@ -32,7 +32,7 @@ const Socials = () => {
   ];
 
   return (
-    <div className="w-full md:w-1/3 p-6 bg-white/70 backdrop-blur-md border border-neutral-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 animate-fade-in animate-delay-200">
+    <div className="h-full w-full p-6 bg-white/70 backdrop-blur-md border border-neutral-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 animate-fade-in animate-delay-200">
       <h2 className="text-xl font-semibold text-neutral-900 mb-4">Socials</h2>
       <div className="grid grid-cols-2 gap-2">
         {socialLinks.map((link, index) => (
