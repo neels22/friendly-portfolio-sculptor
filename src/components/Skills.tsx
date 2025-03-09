@@ -1,5 +1,35 @@
+import React from 'react';
+import { 
+  SiPython, 
+  SiJavascript, 
+  SiTypescript, 
+  SiHtml5, 
+  SiCss3, 
+  SiCplusplus,
+  SiNodedotjs, 
+  SiExpress, 
+  SiReact, 
+  SiLangchain, 
+  SiOpenai, 
+  SiPrisma, 
+  SiNextdotjs, 
+  SiDjango, 
+  SiFastapi, 
+  SiTailwindcss, 
+  SiMysql, 
+  SiMongodb, 
+  SiPostgresql, 
+  SiGit, 
+  SiGithub, 
+  SiPostman, 
+  SiDocker, 
 
-import { Code, Database, Layout, Layers, PenTool, ScreenShare, Cpu, Shield, BarChart, BookOpen } from 'lucide-react';
+  SiFigma, 
+
+  SiJira
+} from 'react-icons/si';
+import { GiTeamIdea } from 'react-icons/gi';
+import { FaTasks } from 'react-icons/fa';
 
 interface Skill {
   name: string;
@@ -8,46 +38,40 @@ interface Skill {
 
 const Skills = () => {
   const skills: Skill[] = [
-    { 
-      name: 'Frontend', 
-      icon: <Layout className="w-4 h-4" /> 
-    },
-    { 
-      name: 'Backend', 
-      icon: <Database className="w-4 h-4" /> 
-    },
-    { 
-      name: 'UI/UX', 
-      icon: <PenTool className="w-4 h-4" /> 
-    },
-    { 
-      name: 'Architecture', 
-      icon: <Layers className="w-4 h-4" /> 
-    },
-    { 
-      name: 'DevOps', 
-      icon: <ScreenShare className="w-4 h-4" /> 
-    },
-    { 
-      name: 'Coding', 
-      icon: <Code className="w-4 h-4" /> 
-    },
-    { 
-      name: 'ML/AI', 
-      icon: <Cpu className="w-4 h-4" /> 
-    },
-    { 
-      name: 'Security', 
-      icon: <Shield className="w-4 h-4" /> 
-    },
-    { 
-      name: 'Analytics', 
-      icon: <BarChart className="w-4 h-4" /> 
-    },
-    { 
-      name: 'Learning', 
-      icon: <BookOpen className="w-4 h-4" /> 
-    },
+    // Group 1: Programming Languages
+    { name: 'Python', icon: <SiPython className="w-4 h-4" /> },
+    { name: 'JavaScript', icon: <SiJavascript className="w-4 h-4" /> },
+    { name: 'TypeScript', icon: <SiTypescript className="w-4 h-4" /> },
+    { name: 'HTML', icon: <SiHtml5 className="w-4 h-4" /> },
+    { name: 'CSS', icon: <SiCss3 className="w-4 h-4" /> },
+    { name: 'C++', icon: <SiCplusplus className="w-4 h-4" /> },
+
+    // Group 2: Frameworks & Libraries
+    { name: 'Node', icon: <SiNodedotjs className="w-4 h-4" /> },
+    { name: 'Express', icon: <SiExpress className="w-4 h-4" /> },
+    { name: 'React', icon: <SiReact className="w-4 h-4" /> },
+    { name: 'LangChain', icon: <SiLangchain className="w-4 h-4" /> },
+    { name: 'GenAI', icon: <SiOpenai className="w-4 h-4" /> },
+    { name: 'Prisma', icon: <SiPrisma className="w-4 h-4" /> },
+    { name: 'NextJs', icon: <SiNextdotjs className="w-4 h-4" /> },
+    { name: 'Django', icon: <SiDjango className="w-4 h-4" /> },
+    { name: 'FastAPI', icon: <SiFastapi className="w-4 h-4" /> },
+    { name: 'TailwindCSS', icon: <SiTailwindcss className="w-4 h-4" /> },
+
+    // Group 3: Databases
+    { name: 'MySQL', icon: <SiMysql className="w-4 h-4" /> },
+    { name: 'MongoDB', icon: <SiMongodb className="w-4 h-4" /> },
+    { name: 'PostgreSQL', icon: <SiPostgresql className="w-4 h-4" /> },
+
+    // Group 4: Tools & Methodologies
+    { name: 'Git', icon: <SiGit className="w-4 h-4" /> },
+    { name: 'Github', icon: <SiGithub className="w-4 h-4" /> },
+    { name: 'Postman', icon: <SiPostman className="w-4 h-4" /> },
+    { name: 'Docker', icon: <SiDocker className="w-4 h-4" /> },
+    { name: 'Figma', icon: <SiFigma className="w-4 h-4" /> },
+    { name: 'Agile', icon: <GiTeamIdea className="w-4 h-4" /> },
+    { name: 'Jira', icon: <SiJira className="w-4 h-4" /> },
+    { name: 'Scrum', icon: <FaTasks className="w-4 h-4" /> },
   ];
 
   return (
@@ -66,12 +90,7 @@ const Skills = () => {
         ))}
       </div>
       
-      <div className="mt-6 p-4 bg-neutral-50 border border-neutral-100 rounded-md">
-        <h3 className="text-md font-medium text-neutral-800 mb-2">Expertise</h3>
-        <p className="text-sm text-neutral-600">
-          Specialized in modern web frameworks, cloud infrastructure, and responsive design. Experienced in building scalable applications with a focus on performance and user experience.
-        </p>
-      </div>
+     
     </div>
   );
 };

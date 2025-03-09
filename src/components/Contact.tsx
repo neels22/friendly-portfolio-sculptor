@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 
 const Contact = () => {
   return (
-    <div className="w-full md:w-1/3 p-6 bg-white/70 backdrop-blur-md border border-neutral-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 animate-fade-in animate-delay-300">
+    <div className="w-full md:w-3/3 my-4 p-6 bg-white/70 backdrop-blur-md border border-neutral-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 animate-fade-in animate-delay-300">
       <h2 className="text-xl font-semibold text-neutral-900 mb-4">Contact Me</h2>
       <div className="space-y-3">
         <a 
