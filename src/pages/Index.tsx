@@ -83,7 +83,7 @@ const Index = () => {
         {/* Main Layout Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Left Column */}
-          <div className="md:col-span-2 space-y-6">
+          <div className="md:col-span-4 space-y-6">
             {/* Hero */}
             <Hero name="Indraneel" title="Software Engineer & Design Enthusiast" />
             
