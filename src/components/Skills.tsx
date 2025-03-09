@@ -1,5 +1,5 @@
 
-import { Code, Database, Layout, Layers, PenTool, ScreenShare } from 'lucide-react';
+import { Code, Database, Layout, Layers, PenTool, ScreenShare, Cpu, Shield, BarChart, BookOpen } from 'lucide-react';
 
 interface Skill {
   name: string;
@@ -32,10 +32,26 @@ const Skills = () => {
       name: 'Coding', 
       icon: <Code className="w-4 h-4" /> 
     },
+    { 
+      name: 'ML/AI', 
+      icon: <Cpu className="w-4 h-4" /> 
+    },
+    { 
+      name: 'Security', 
+      icon: <Shield className="w-4 h-4" /> 
+    },
+    { 
+      name: 'Analytics', 
+      icon: <BarChart className="w-4 h-4" /> 
+    },
+    { 
+      name: 'Learning', 
+      icon: <BookOpen className="w-4 h-4" /> 
+    },
   ];
 
   return (
-    <div className="w-full md:w-1/3 p-6 bg-white/70 backdrop-blur-md border border-neutral-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 animate-fade-in animate-delay-100">
+    <div className="h-full w-full p-6 bg-white/70 backdrop-blur-md border border-neutral-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 animate-fade-in animate-delay-100">
       <h2 className="text-xl font-semibold text-neutral-900 mb-4">Skills</h2>
       <div className="grid grid-cols-2 gap-2">
         {skills.map((skill, index) => (
@@ -48,6 +64,13 @@ const Skills = () => {
             {skill.name}
           </div>
         ))}
+      </div>
+      
+      <div className="mt-6 p-4 bg-neutral-50 border border-neutral-100 rounded-md">
+        <h3 className="text-md font-medium text-neutral-800 mb-2">Expertise</h3>
+        <p className="text-sm text-neutral-600">
+          Specialized in modern web frameworks, cloud infrastructure, and responsive design. Experienced in building scalable applications with a focus on performance and user experience.
+        </p>
       </div>
     </div>
   );

@@ -80,16 +80,24 @@ const Index = () => {
       <BackgroundGrid />
       
       <div ref={contentRef} className="relative z-10 max-w-6xl mx-auto px-4 py-8 sm:py-12 space-y-8">
-        {/* Header Section */}
-        <header className="flex flex-col md:flex-row gap-4 md:gap-8">
-          <Hero name="Indraneel" title="Software Engineer & Design Enthusiast" />
-          <Skills />
-        </header>
-        
-        {/* Secondary Navigation */}
-        <div className="flex flex-col md:flex-row gap-4 md:gap-8">
-          <Socials />
-          <About />
+        {/* Main Layout Section */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
+          {/* Left Column */}
+          <div className="md:col-span-2 space-y-4">
+            {/* Hero */}
+            <Hero name="Indraneel" title="Software Engineer & Design Enthusiast" />
+            
+            {/* Socials and About */}
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Socials />
+              <About />
+            </div>
+          </div>
+          
+          {/* Right Column - Skills (taller) */}
+          <div className="md:row-span-2">
+            <Skills />
+          </div>
         </div>
         
         {/* Mid Section */}
